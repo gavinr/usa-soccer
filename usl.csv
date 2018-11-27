@@ -1,4 +1,4 @@
-team_name,city,city_latitude,city_longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate
+team_name,city,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate
 Atlanta United 2,"Lawrenceville, Georgia",33.929464,-84.103226,Coolray Field,7362,2017,2018,Scott Donnelly,Atlanta United FC
 Bethlehem Steel FC,"Philadelphia, Pennsylvania",40.001811,-75.11787,Talen Energy Stadium,18500,2015,2016,Brendan Burke,Philadelphia Union
 Charleston Battery,"Charleston, South Carolina",32.780326,-79.940844,MUSC Health Stadium,5100,1993,2011,Mike Anhaeuser,
@@ -6,7 +6,7 @@ Charlotte Independence,"Matthews, North Carolina",35.060868,-80.693292,Sportsple
 Colorado Springs Switchbacks FC,"Colorado Springs, Colorado",38.861469,-104.857828,Weidner Field,5000,2013,2015,Steve Trittschuh,Colorado Rapids
 Fresno FC,"Fresno, California",36.8411,-119.801015,Chukchansi Park,12500,2017,2018,Adam Smith,Vancouver Whitecaps FC
 Indy Eleven,"Indianapolis, Indiana",39.775092,-86.13216,Lucas Oil Stadium,62421,2013,2018,Martin Rennie,
-LA Galaxy II,"Carson, California",33.813317,-118.261154,StubHub Center Track Stadium,5000,2014,2014,Mike Muñoz,LA Galaxy
+LA Galaxy II,"Carson, California",33.813317,-118.261154,StubHub Center Track Stadium,5000,2014,2014,Mike MuÃ±oz,LA Galaxy
 Las Vegas Lights FC,"Las Vegas, Nevada",36.17372,-115.10647,Cashman Field,9334,2017,2018,Eric Wynalda,
 Louisville City FC,"Louisville, Kentucky",38.188962,-85.676819,Louisville Slugger Field,8000,2014,2015,John Hackworth,
 Nashville SC,"Nashville, Tennessee",36.165688,-86.778098,First Tennessee Park,10000,2016,2018,Gary Smith,
@@ -18,7 +18,7 @@ Ottawa Fury FC,"Ottawa, Ontario",34.05936,-117.6203,TD Place Stadium,24000,2011,
 Phoenix Rising FC,"Tempe, Arizona",33.401395,-111.931298,Phoenix Rising FC Soccer Complex,6200,2014,2014,Rick Schantz,
 Pittsburgh Riverhounds SC,"Pittsburgh, Pennsylvania",40.47441,-79.950968,Highmark Stadium,5000,1998,2011,Bob Lilley,
 Portland Timbers 2,"Portland, Oregon",45.507856,-122.690794,Providence Park,21144,2014,2015,Cameron Knowles,Portland Timbers
-Real Monarchs,"Herriman, Utah",40.51411,-112.03299,Zions Bank Stadium,5000,2014,2015,Jámison Olave (interim),Real Salt Lake
+Real Monarchs,"Herriman, Utah",40.51411,-112.03299,Zions Bank Stadium,5000,2014,2015,JÃ¡mison Olave (interim),Real Salt Lake
 Reno 1868 FC,"Reno, Nevada",39.525749,-119.813051,Greater Nevada Field,9013,2015,2017,Ian Russell,San Jose Earthquakes
 Rio Grande Valley FC Toros,"Edinburg, Texas",26.280689,-98.183295,H-E-B Park,9400,2015,2016,Gerson Echeverry,Houston Dynamo
 Sacramento Republic FC,"Sacramento, California",38.380456,-121.555406,Papa Murphy's Park,11569,2012,2014,Simon Elliott,
