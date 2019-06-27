@@ -10,7 +10,7 @@ CSV data of the USA soccer teams and locations
 
 [View an interactive map of this data](https://arcg.is/18zeHG)
 
-[![screenshot](https://i.imgur.com/n7pd5D3.png)](https://arcg.is/18zeHG)
+[![screenshot](https://github.com/gavinr/usa-soccer/raw/master/map.png)](https://arcg.is/18zeHG)
 
 ## Source
 
