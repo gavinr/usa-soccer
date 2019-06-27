@@ -1,24 +1,25 @@
-team,conference,city,latitude,longitude,stadium,stadium_capacity,joined,head_coach
-Atlanta United FC,Eastern,"Atlanta, Georgia",33.75,-84.3903,Mercedes-Benz Stadium,425004,2017,Gerardo Martino
-Chicago Fire,Eastern,"Bridgeview, Illinois",41.75003,-87.80422,Toyota Park,20000,1998,Veljko Paunovic
-Columbus Crew SC,Eastern,"Columbus, Ohio",40.100924,-83.013402,Mapfre Stadium,19968,1996,Gregg Berhalter
-D.C. United,Eastern,"Washington, D.C.",38.911936,-77.016719,Audi Field,20000,1996,Ben Olsen
-Montreal Impact,Eastern,"Montreal, Quebec",45.501690,-73.567253,Saputo Stadium,20801,2012,Remi Garde
-New England Revolution,Eastern,"Foxborough, Massachusetts",42.065377,-71.247831,Gillette Stadium,200004,1996,Brad Friedel
-New York City FC,Eastern,"New York City, New York",40.68863,-74.018244,Yankee Stadium,303214,2015,Domenec Torrent
-New York Red Bulls,Eastern,"Harrison, New Jersey",40.744501,-74.150787,Red Bull Arena,25000,1996,Chris Armas
-Orlando City SC,Eastern,"Orlando, Florida",28.545179,-81.373291,Orlando City Stadium,25500,2015,James O'Connor
-Philadelphia Union,Eastern,"Chester, Pennsylvania",39.848163,-75.378098,Talen Energy Stadium,18500,2010,Jim Curtin
-Toronto FC,Eastern,"Toronto, Ontario",43.653225,-79.383186,BMO Field,30991,2007,Greg Vanney
-Colorado Rapids,Western,"Commerce City, Colorado",39.869835,-104.771527,Dick's Sporting Goods Park,18061,1996,Anthony Hudson
-FC Dallas,Western,"Frisco, Texas",33.146336,-96.856347,Toyota Stadium,20500,1996,
-Houston Dynamo,Western,"Houston, Texas",29.813142,-95.309789,BBVA Compass Stadium,22039,2006,Wilmer Cabrera
-LA Galaxy,Western,"Carson, California",33.813317,-118.261154,StubHub Center,27000,1996,Dominic Kinnear (interim)
-Los Angeles FC,Western,"Los Angeles, California",33.973951,-118.248405,Banc of California Stadium,22000,2018,Bob Bradley
-Minnesota United FC,Western,"Minneapolis, Minnesota",44.984577,-93.269097,TCF Bank Stadium,50805,2017,Adrian Heath
-Portland Timbers,Western,"Portland, Oregon",45.507856,-122.690794,Providence Park,21144,2011,Giovanni Savarese
-Real Salt Lake,Western,"Sandy, Utah",40.577106,-111.889047,Rio Tinto Stadium,20213,2005,Mike Petke
-San Jose Earthquakes,Western,"San Jose, California",37.189396,-121.705327,Avaya Stadium,18000,1996,Matias Almeyda
-Seattle Sounders FC,Western,"Seattle, Washington",47.432251,-121.803388,CenturyLink Field,394194,2009,Brian Schmetzer
-Sporting Kansas City,Western,"Kansas City, Kansas",39.103053,-94.630384,Children's Mercy Park,18467,1996,Peter Vermes
-Vancouver Whitecaps FC,Western,"Vancouver, British Columbia",49.282730,-123.120735,BC Place,221204,2011,Marc Dos Santos
+﻿team,city,state,latitude,longitude,stadium,stadium_capacity,joined,head_coach
+Atlanta United FC,Atlanta,Georgia,33.755,-84.401,Mercedes-Benz Stadium,425004,2017,Frank de Boer
+Chicago Fire,Bridgeview,Illinois,41.76472222,-87.80611111,SeatGeek Stadium,20000,1998,Veljko Paunović
+FC Cincinnati,Cincinnati,Ohio,39.131,-84.516,Nippert Stadium,322504,2019,Yoann Damet
+Columbus Crew SC,Columbus,Ohio,40.00944444,-82.99111111,Mapfre Stadium,19968,1996,Caleb Porter
+D.C. United,Washington,D.C.,38.86833333,-77.01222222,Audi Field,20000,1996,Ben Olsen
+Montreal Impact,Montreal,Quebec,45.56305556,-73.5525,Saputo Stadium,20801,2012,Rémi Garde
+New England Revolution,Foxborough,Massachusetts,42.09094444,-71.26434444,Gillette Stadium,200004,1996,Bruce Arena
+New York City FC,New York City,New York,40.82916667,-73.92638889,Yankee Stadium,303214,2015,Domènec Torrent
+New York Red Bulls,Harrison,New Jersey,40.73666667,-74.15027778,Red Bull Arena,25000,1996,Chris Armas
+Orlando City SC,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,James O'Connor
+Philadelphia Union,Chester,Pennsylvania,39.83222222,-75.37888889,Talen Energy Stadium,18500,2010,Jim Curtin
+Toronto FC,Toronto,Ontario,43.63277778,-79.41861111,BMO Field,30991,2007,Greg Vanney
+Colorado Rapids,Commerce City,Colorado,39.80555556,-104.89194444,Dick's Sporting Goods Park,18061,1996,Conor Casey
+FC Dallas,Frisco,Texas,33.15444444,-96.83527778,Toyota Stadium,20500,1996,Luchi Gonzalez
+Houston Dynamo,Houston,Texas,29.7522,-95.3524,BBVA Stadium,22039,2006,Wilmer Cabrera
+LA Galaxy,Carson,California,33.864,-118.261,Dignity Health Sports Park,27000,1996,Guillermo Barros Schelotto
+Los Angeles FC,Los Angeles,California,34.013,-118.285,Banc of California Stadium,22000,2018,Bob Bradley
+Minnesota United FC,Saint Paul,Minnesota,44.95277778,-93.165,Allianz Field,19400,2017,Adrian Heath
+Portland Timbers,Portland,Oregon,45.52138889,-122.69166667,Providence Park,25218[43],2011,Giovanni Savarese
+Real Salt Lake,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2005,Mike Petke
+San Jose Earthquakes,San Jose,California,37.35138889,-121.925,Avaya Stadium,18000,1996,Matías Almeyda
+Seattle Sounders FC,Seattle,Washington,47.5952,-122.3316,CenturyLink Field,394194,2009,Brian Schmetzer
+Sporting Kansas City,Kansas City,Kansas,39.1218,-94.8237,Children's Mercy Park,18467,1996,Peter Vermes
+Vancouver Whitecaps FC,Vancouver,British Columbia,49.27666667,-123.11194444,BC Place,221204,2011,Marc Dos Santos
