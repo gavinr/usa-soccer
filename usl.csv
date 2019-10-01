@@ -1,37 +1,37 @@
-﻿team_name,city,state,stadium,stadium_capacity,year_founded,year_joined,conference,head_coach,mls_affiliate,longitude,latitude
-Atlanta United 2,Kennesaw,Georgia,Fifth Third Bank Stadium,8318,2017,2018,Eastern,Stephen Glass,Atlanta United FC,-84.56760406,34.02895737
-Bethlehem Steel FC,Chester,Pennsylvania,Talen Energy Stadium,18500,2015,2016,Eastern,Brendan Burke,Philadelphia Union,-75.37848663,39.83283997
-Birmingham Legion FC,Birmingham,Alabama,BBVA Field,5000,2017,2019,Eastern,Tom Soehn,,-86.81215668,33.49709702
-Charleston Battery,Charleston,South Carolina,MUSC Health Stadium,5100,1993,2011,Eastern,Mike Anhaeuser,,-79.91976166,32.87082291
-Charlotte Independence,Matthews,North Carolina,Sportsplex at Matthews,5000,2014,2015,Eastern,Mike Jeffries,,-80.6971817,35.10983276
-Hartford Athletic,Hartford,Connecticut,Dillon Stadium,5500,2018,2019,Eastern,Jimmy Nielsen,,-72.66104889,41.75382614
-Indy Eleven,Indianapolis,Indiana,Lucas Oil Stadium,62421,2013,2018,Eastern,Martin Rennie,Chicago Fire,-86.16358948,39.76014328
-Loudoun United FC,Leesburg,Virginia,Loudoun United Stadium,5000,2018,2019,Eastern,Ryan Martin,D.C. United,-77.53805542,39.07081985
-Louisville City FC,Louisville,Kentucky,Louisville Slugger Field,8000,2014,2015,Eastern,John Hackworth,,-85.74459076,38.25630188
-Memphis 901 FC,Memphis,Tennessee,AutoZone Park,10000,2018,2019,Eastern,Tim Mulqueen,,-90.04943848,35.14287186
-Nashville SC,Nashville,Tennessee,First Tennessee Park,10000,2016,2018,Eastern,Gary Smith,,-86.78488159,36.17284012
-New York Red Bulls II,Montclair,New Jersey,MSU Soccer Park at Pittser Field,5000,2015,,Eastern,John Wolyniec,New York Red Bulls,-74.20040894,40.86090851
-North Carolina FC,Cary,North Carolina,WakeMed Soccer Park,10000,2006,2018,Eastern,Dave Sarachan,,-78.75508118,35.78615189
-Ottawa Fury FC,Ottawa,Ontario,TD Place Stadium,24000,2011,2017,Eastern,Nikola Popovic,Montreal Impact,-75.68345642,45.3982048
-Pittsburgh Riverhounds SC,Pittsburgh,Pennsylvania,Highmark Stadium,5000,1998,2011,Eastern,Bob Lilley,,-80.009552,40.43623352
-Saint Louis FC,Fenton,Missouri,West Community Stadium,5500,2014,2015,Eastern,Anthony Pulis,,-90.43863678,38.54673386
-Swope Park Rangers,Kansas City,Kansas,Children's Mercy Park,18467,2015,2016,Eastern,Paulo Nagamura,Sporting Kansas City,-94.82324982,39.12160492
-Tampa Bay Rowdies,St. Petersburg,Florida,Al Lang Stadium,7227,2008,2017,Eastern,Neill Collins,,-82.63297272,27.76822281
-Austin Bold FC,Elroy,Texas,Bold Stadium,5000,2017,2019,Western,Marcelo Serrano,,-97.63918304,30.13589478
-Colorado Springs Switchbacks FC,Colorado Springs,Colorado,Weidner Field,5000,2013,2015,Western,Steve Trittschuh,Colorado Rapids,-104.7115479,38.89546585
-El Paso Locomotive FC,El Paso,Texas,Southwest University Park,9500,2018,2019,Western,Mark Lowry,,-106.4927597,31.75887108
-Fresno FC,Fresno,California,Chukchansi Park,12500,2017,2018,Western,Adam Smith,Vancouver Whitecaps FC,-119.7906189,36.73214722
-LA Galaxy II,Carson,California,Dignity Health Track Stadium,5000,2014,,Western,Mike Muñoz,LA Galaxy,-118.2610855,33.86424637
-Las Vegas Lights FC,Las Vegas,Nevada,Cashman Field,9334,2017,2018,Western,Eric Wynalda,,-115.1299744,36.17967987
-New Mexico United,Albuquerque,New Mexico,Isotopes Park,13500,2018,2019,Western,Troy Lesesne,,-106.6293945,35.06965256
-Oklahoma City Energy FC,Oklahoma City,Oklahoma,Taft Stadium,7500,2013,2014,Western,Steve Cooke,,-97.56708527,35.49588013
-Orange County SC,Irvine,California,Championship Soccer Stadium,5000,2010,2011,Western,Braeden Cloutier,Los Angeles FC,-117.7394409,33.67449951
-Phoenix Rising FC,Tempe,Arizona,Casino Arizona Field,6200,2014,,Western,Rick Schantz,,-111.9061584,33.43823624
-Portland Timbers 2,Portland,Oregon,Providence Park,25218,2014,2015,Western,Cameron Knowles,Portland Timbers,-122.6917801,45.52153778
-Real Monarchs,Herriman,Utah,Zions Bank Stadium,5000,2014,2015,Western,Martín Vásquez,Real Salt Lake,-111.979454,40.48381424
-Reno 1868 FC,Reno,Nevada,Greater Nevada Field,9013,2015,2017,Western,Ian Russell,San Jose Earthquakes,-119.8082809,39.52852631
-Rio Grande Valley FC Toros,Edinburg,Texas,H-E-B Park,9400,2015,2016,Western,Gerson Echeverry,Houston Dynamo,-98.13515472,26.28255463
-Sacramento Republic FC,Sacramento,California,Papa Murphy's Park,11569,2012,2014,Western,Simon Elliott,,-121.4380112,38.59140778
-San Antonio FC,San Antonio,Texas,Toyota Field,8296,2016,,Western,Darren Powell,New York City FC,-98.3945694,29.53938866
-Tacoma Defiance,Tacoma,Washington,Cheney Stadium,6500,2014,2015,Western,Chris Little,Seattle Sounders FC,-122.4976196,47.23796844
-Tulsa Roughnecks FC,Tulsa,Oklahoma,ONEOK Field,7833,2013,2015,Western,Michael Nsien,,-95.98817444,36.1603775
+﻿team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate
+Atlanta United 2,Kennesaw,Georgia,34.028967,-84.567626,Fifth Third Bank Stadium,8318,2017,2018,Stephen Glass,Atlanta United FC
+Bethlehem Steel FC,Chester,Pennsylvania,39.83222222,-75.37888889,Talen Energy Stadium,18500,2015,2016,Brendan Burke,Philadelphia Union
+Birmingham Legion FC,Birmingham,Alabama,33.4980615,-86.8125946,BBVA Field,5000,2017,2019,Tom Soehn,
+Charleston Battery,Charleston,South Carolina,32.8702487,-79.919538,MUSC Health Stadium,5100,1993,2011,Mike Anhaeuser,
+Charlotte Independence,Matthews,North Carolina,35.11216667,-80.70019444,Sportsplex at Matthews,5000,2014,2015,Mike Jeffries,
+Hartford Athletic,Hartford,Connecticut,41.7538,-72.6611,Dillon Stadium,5500,2018,2019,Jimmy Nielsen,
+Indy Eleven,Indianapolis,Indiana,39.76005556,-86.16380556,Lucas Oil Stadium,62421,2013,2018,Martin Rennie,Chicago Fire
+Loudoun United FC,Leesburg,Virginia,39.070746,-77.545434,Segra Field,5000,2018,2019,,D.C. United
+Louisville City FC,Louisville,Kentucky,38.25618611,-85.74465278,Louisville Slugger Field,8000,2014,2015,John Hackworth,
+Memphis 901 FC,Memphis,Tennessee,35.14305556,-90.04916667,AutoZone Park,10000,2018,2019,Tim Mulqueen,
+Nashville SC,Nashville,Tennessee,36.173031,-86.785033,First Tennessee Park,10000,2016,2018,Gary Smith,
+New York Red Bulls II,Montclair,New Jersey,40.860694,-74.200555,MSU Soccer Park at Pittser Field,5000,2015,2015,John Wolyniec,New York Red Bulls
+North Carolina FC,Cary,North Carolina,35.78616389,-78.75510556,WakeMed Soccer Park,10000,2006,2018,Dave Sarachan,
+Ottawa Fury FC,Ottawa,Ontario,45.39817778,-75.68365,TD Place Stadium,24000,2011,2017,Nikola Popovic,Montreal Impact
+Pittsburgh Riverhounds SC,Pittsburgh,Pennsylvania,40.43611111,-80.00944444,Highmark Stadium,5000,1998,2011,Bob Lilley,
+Saint Louis FC,Fenton,Missouri,38.54722222,-90.43888889,West Community Stadium,5500,2014,2015,Anthony Pulis,
+Swope Park Rangers,Kansas City,Kansas,39.1218,-94.8237,Children's Mercy Park,18467,2015,2016,Paulo Nagamura,Sporting Kansas City
+Tampa Bay Rowdies,St. Petersburg,Florida,27.7681,-82.6331,Al Lang Stadium,7227,2008,2017,Neill Collins,
+Austin Bold FC,Austin,Texas,30.13277778,-97.64111111,Bold Stadium,5000,2017,2019,Marcelo Serrano,
+Colorado Springs Switchbacks FC,Colorado Springs,Colorado,38.895826,-104.711321,Weidner Field,5000,2013,2015,Alan Koch,Colorado Rapids
+El Paso Locomotive FC,El Paso,Texas,31.759,-106.493,Southwest University Park,9500,2018,2019,Mark Lowry,
+Fresno FC,Fresno,California,36.7321,-119.7905,Chukchansi Park,12500,2017,2018,Adam Smith,
+LA Galaxy II,Carson,California,33.864,-118.261,Dignity Health Track Stadium,5000,2014,2014,Junior Gonzalez,LA Galaxy
+Las Vegas Lights FC,Las Vegas,Nevada,36.17966667,-115.12997222,Cashman Field,9334,2017,2018,Eric Wynalda,
+New Mexico United,Albuquerque,New Mexico,35.06972222,-106.62916667,Isotopes Park,13500,2018,2019,Troy Lesesne,
+Oklahoma City Energy FC,Oklahoma City,Oklahoma,35.49583333,-97.56694444,Taft Stadium,7500,2013,2014,Steve Cooke,
+Orange County SC,Irvine,California,33.67,-117.73,Championship Soccer Stadium,5000,2010,2011,Braeden Cloutier,
+Phoenix Rising FC,Tempe,Arizona,33.4375,-111.90555556,Casino Arizona Field,6200,2014,2014,Rick Schantz,
+Portland Timbers 2,Portland,Oregon,45.52138889,-122.69166667,Providence Park,25218,2014,2015,Cameron Knowles,Portland Timbers
+Real Monarchs,Herriman,Utah,40.48388889,-111.97944444,Zions Bank Stadium,5000,2014,2015,Jámison Olave,Real Salt Lake
+Reno 1868 FC,Reno,Nevada,39.529,-119.808,Greater Nevada Field,9013,2015,2017,Ian Russell,San Jose Earthquakes
+Rio Grande Valley FC,Edinburg,Texas,26.2826,-98.1352,H-E-B Park,9400,2015,2016,Gerson Echeverry,Houston Dynamo
+Sacramento Republic FC,Sacramento,California,38.59111111,-121.43805556,Papa Murphy's Park,11569,2012,2014,Simon Elliott,
+San Antonio FC,San Antonio,Texas,29.53890833,-98.39461667,Toyota Field,8296,2016,2016,Darren Powell,New York City FC
+Tacoma Defiance,Tacoma,Washington,47.23803333,-122.49754444,Cheney Stadium,6500,2014,2015,Chris Little,Seattle Sounders FC
+Tulsa Roughnecks FC,Tulsa,Oklahoma,36.15972222,-95.98805556,Oneok Field,7833,2013,2015,Michael Nsien,
