@@ -1,10 +1,10 @@
-Team,Stadium,Capacity	City,Founded,Joined,Head coach,Men's affiliate
-Chicago Red Stars,SeatGeek Stadium,20000,Bridgeview,Illinois,2006,2013,Rory Dames,—
-Houston Dash,BBVA Stadium,7000,Houston,Texas,2013,2014,James Clarkson,Houston Dynamo (MLS)
-North Carolina Courage,WakeMed Soccer Park,10000,Cary North Carolina,2009,2013,Paul Riley,North Carolina FC (USLC)
-Orlando Pride,Exploria Stadium,25500,Orlando,Florida,2015,2016,Marc Skinner,Orlando City SC (MLS)
-Portland Thorns FC,Providence Park,25218,Portland,Oregom,2012,2013,Mark Parsons,Portland Timbers (MLS)
-Reign FC,Cheney Stadium,6500,Tacoma Washington,2012,2013,Vlatko,Andonovski,—
-Sky Blue FC,Yurcak Field,5000,Piscataway  New Jersey,2007,2013,Freya Coombe,—
-Utah Royals FC,Rio Tinto Stadium,20213,Sandy Utah,2017,2018,Laura Harvey,Real Salt Lake (MLS)
-Washington Spirit,Maryland SoccerPlex,4000,Boyds Maryland,2012,2013,Richie Burke,—
+team_name,stadium,stadium_capacity,city,state,year_founded,year_joined,head_coach,mens_affiliate,latitude,longitude
+Chicago Red Stars,SeatGeek Stadium,20000,Bridgeview,Illinois,2006,2013,Rory Dames,,,
+Houston Dash,BBVA Stadium,7000,Houston,Texas,2013,2014,James Clarkson,Houston Dynamo (MLS),,
+North Carolina Courage,WakeMed Soccer Park,10000,Cary,North Carolina,2009,2013,Paul Riley,North Carolina FC (USLC),,
+Orlando Pride,Exploria Stadium,25500,Orlando,Florida,2015,2016,Marc Skinner,Orlando City SC (MLS),,
+Portland Thorns FC,Providence Park,25218,Portland,Oregon,2012,2013,Mark Parsons,Portland Timbers (MLS),,
+Reign FC,Cheney Stadium,6500,Tacoma,Washington,2012,2013,Vlatko,Andonovski,,
+Sky Blue FC,Yurcak Field,5000,Piscataway,New Jersey,2007,2013,Freya Coombe,,,
+Utah Royals FC,Rio Tinto Stadium,20213,Sandy, Utah,2017,2018,Laura Harvey,Real Salt Lake (MLS),,
+Washington Spirit,Maryland SoccerPlex,4000,Boyds,Maryland,2012,2013,Richie Burke,,,
