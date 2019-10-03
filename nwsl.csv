@@ -1,10 +1,10 @@
-team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach
-Chicago Red Stars,Bridgeview,Illinois,41.76472222,-87.80611111,SeatGeek Stadium,20000,2006,2013,Rory Dames
-Houston Dash,Houston,Texas,29.7522,-95.3524,BBVA  Stadium,7000,2013,2014,James Clarkson
-North Carolina Courage,Cary,North Carolina,35.78616389,-78.75510556,WakeMed Soccer Park,10000,2009,2013,Paul Riley
-Orlando Pride,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,2016,Marc Skinner
-Portland Thorns FC,Portland,Oregon,45.52138889,-122.69166667,Providence Park,25218,2012,2013,Mark Parsons
-Reign FC,Tacoma,Washington,47.23803333,-122.49754444,Cheney Stadium,6500,2012,2013,Vlatko Andonovski
-Sky Blue FC,Piscataway,New Jersey,40.518534,-74.463712,Yurcak Field,5000,2007,2013,Freya Coombe
-Utah Royals FC,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2017,2018,Laura Harvey
-Washington Spirit,Boyds,Maryland,39.15271,-77.310131,Maryland SoccerPlex,4000,2012,2013,Richie Burke
+team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach,url
+Chicago Red Stars,Bridgeview,Illinois,41.76472222,-87.80611111,SeatGeek Stadium,20000,2006,2013,Rory Dames,http://chicagoredstars.com/
+Houston Dash,Houston,Texas,29.7522,-95.3524,BBVA  Stadium,7000,2013,2014,James Clarkson,https://www.houstondynamo.com/houstondash
+North Carolina Courage,Cary,North Carolina,35.78616389,-78.75510556,WakeMed Soccer Park,10000,2009,2013,Paul Riley,https://www.nccourage.com/
+Orlando Pride,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,2016,Marc Skinner,https://www.orlandocitysc.com/pride
+Portland Thorns FC,Portland,Oregon,45.52138889,-122.6916667,Providence Park,25218,2012,2013,Mark Parsons,https://www.timbers.com/thornsfc
+Reign FC,Tacoma,Washington,47.23803333,-122.4975444,Cheney Stadium,6500,2012,2013,Vlatko Andonovski,https://www.reignfc.com/
+Sky Blue FC,Piscataway,New Jersey,40.518534,-74.463712,Yurcak Field,5000,2007,2013,Freya Coombe,https://skybluefc.com/
+Utah Royals FC,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2017,2018,Laura Harvey,https://www.rsl.com/utahroyalsfc
+Washington Spirit,Boyds,Maryland,39.15271,-77.310131,Maryland SoccerPlex,4000,2012,2013,Richie Burke,https://washingtonspirit.com/
