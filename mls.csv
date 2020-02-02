@@ -1,25 +1,27 @@
 ﻿team,city,state,latitude,longitude,stadium,stadium_capacity,joined,head_coach,url
-Atlanta United FC,Atlanta,Georgia,33.755,-84.401,Mercedes-Benz Stadium,425004,2017,Frank de Boer,https://www.atlutd.com/
-Chicago Fire,Bridgeview,Illinois,41.76472222,-87.80611111,SeatGeek Stadium,20000,1998,Veljko Paunović,https://www.chicago-fire.com/
-FC Cincinnati,Cincinnati,Ohio,39.131,-84.516,Nippert Stadium,322504,2019,Ron Jans,https://www.fccincinnati.com/
+Atlanta United FC,Atlanta,Georgia,33.75555556,-84.4,Mercedes-Benz Stadium,425004,2017,Frank de Boer,https://www.atlutd.com/
+Chicago Fire FC,Chicago,Illinois,41.8623,-87.6167,Soldier Field,24995,1998,Raphaël Wicky,https://www.chicago-fire.com/
+FC Cincinnati,Cincinnati,Ohio,39.131,-84.516,Nippert Stadium,32250,2019,Ron Jans,https://www.fccincinnati.com/
 Columbus Crew SC,Columbus,Ohio,40.00944444,-82.99111111,Mapfre Stadium,19968,1996,Caleb Porter,https://www.columbuscrewsc.com/
 D.C. United,Washington,D.C.,38.86833333,-77.01222222,Audi Field,20000,1996,Ben Olsen,https://www.dcunited.com/
-Montreal Impact,Montreal,Quebec,45.56305556,-73.5525,Saputo Stadium,20801,2012,Wílmer Cabrera,https://www.impactmontreal.com/en
-New England Revolution,Foxborough,Massachusetts,42.09094444,-71.26434444,Gillette Stadium,200004,1996,Bruce Arena,https://www.revolutionsoccer.net/
-New York City FC,New York City,New York,40.82916667,-73.92638889,Yankee Stadium,303214,2015,Domènec Torrent,https://www.nycfc.com/
+Inter Miami CF,Fort Lauderdale,Florida,26.19305556,-80.16111111,Lockhart Stadium,18000,2020,Diego Alonso,https://www.intermiamicf.com/
+Montreal Impact,Montreal,Quebec,45.56305556,-73.5525,Saputo Stadium,20801,2012,Thierry Henry,https://www.impactmontreal.com/en
+New England Revolution,Foxborough,Massachusetts,42.091,-71.264,Gillette Stadium,20000,1996,Bruce Arena,https://www.revolutionsoccer.net/
+New York City FC,New York City,New York,40.82916667,-73.92638889,Yankee Stadium,303214,2015,Ronny Deila,https://www.nycfc.com/
 New York Red Bulls,Harrison,New Jersey,40.73666667,-74.15027778,Red Bull Arena,25000,1996,Chris Armas,https://www.newyorkredbulls.com/
-Orlando City SC,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,James O'Connor,https://www.orlandocitysc.com/
+Orlando City SC,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,Óscar Pareja,https://www.orlandocitysc.com/
 Philadelphia Union,Chester,Pennsylvania,39.83222222,-75.37888889,Talen Energy Stadium,18500,2010,Jim Curtin,https://www.philadelphiaunion.com/
 Toronto FC,Toronto,Ontario,43.63277778,-79.41861111,BMO Field,30991,2007,Greg Vanney,https://www.torontofc.ca/
 Colorado Rapids,Commerce City,Colorado,39.80555556,-104.8919444,Dick's Sporting Goods Park,18061,1996,Robin Fraser,https://www.coloradorapids.com/
 FC Dallas,Frisco,Texas,33.15444444,-96.83527778,Toyota Stadium,20500,1996,Luchi Gonzalez,https://www.fcdallas.com/
-Houston Dynamo,Houston,Texas,29.7522,-95.3524,BBVA Stadium,22039,2006,Davy Arnaud,https://www.houstondynamo.com/
+Houston Dynamo,Houston,Texas,29.7522,-95.3524,BBVA Stadium,22039,2006,Tab Ramos,https://www.houstondynamo.com/
 LA Galaxy,Carson,California,33.864,-118.261,Dignity Health Sports Park,27000,1996,Guillermo Barros Schelotto,https://www.lagalaxy.com/
 Los Angeles FC,Los Angeles,California,34.013,-118.285,Banc of California Stadium,22000,2018,Bob Bradley,https://www.lafc.com/
 Minnesota United FC,Saint Paul,Minnesota,44.95277778,-93.165,Allianz Field,19400,2017,Adrian Heath,https://www.mnufc.com/
+Nashville SC,Nashville,Tennessee,36.16638889,-86.77138889,Nissan Stadium,69143,2020,Gary Smith,https://www.timbers.com/
 Portland Timbers,Portland,Oregon,45.52138889,-122.6916667,Providence Park,25218,2011,Giovanni Savarese,https://www.timbers.com/
 Real Salt Lake,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2005,Freddy Juarez,https://www.rsl.com/
-San Jose Earthquakes,San Jose,California,37.35138889,-121.925,Avaya Stadium,18000,1996,Matías Almeyda,https://www.sjearthquakes.com/
+San Jose Earthquakes,San Jose,California,37.35138889,-121.925,Earthquakes Stadium,18000,1996,Matías Almeyda,https://www.sjearthquakes.com/
 Seattle Sounders FC,Seattle,Washington,47.5952,-122.3316,CenturyLink Field,394194,2009,Brian Schmetzer,https://www.soundersfc.com/
 Sporting Kansas City,Kansas City,Kansas,39.1218,-94.8237,Children's Mercy Park,18467,1996,Peter Vermes,https://www.sportingkc.com/
 Vancouver Whitecaps FC,Vancouver,British Columbia,49.27666667,-123.1119444,BC Place,221204,2011,Marc Dos Santos,https://www.whitecapsfc.com/
