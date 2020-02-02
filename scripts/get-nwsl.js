@@ -39,7 +39,10 @@ const results = $('.wikitable').first().find('tr').get().map(async function(tr) 
   if($(tr).find('td').eq(0).find('a').text()) {
 
     var stadiumLink = $(tr).find('td').eq(1).find('a').eq(0).attr('href');
-    var location = await getLocation(decodeURIComponent(stadiumLink.replace('/wiki/', '')))
+    console.log('stadiumLink:', stadiumLink);
+    if(stadiumLink) {
+      var location = await getLocation(decodeURIComponent(stadiumLink.replace('/wiki/', '')))
+    }
 
     if(location) {
       console.log('location', location);
