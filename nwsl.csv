@@ -1,4 +1,4 @@
-team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach,url
+team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach,url,wikipedia_url
 Chicago Red Stars,Bridgeview,Illinois,41.76472222,-87.80611111,SeatGeek Stadium,20000,2006,2013,Rory Dames,http://www.chicagoredstars.com/,https://en.wikipedia.org/wiki/Chicago_Red_Stars
 Houston Dash,Houston,Texas,29.7522,-95.3524,BBVA Stadium,7000[b],2013,2014,James Clarkson,https://www.houstondynamofc.com/houstondash,https://en.wikipedia.org/wiki/Houston_Dash
 North Carolina Courage,Cary,North Carolina,35.78616389,-78.75510556,Sahlen's Stadium,10000,2017,2017,Paul Riley,https://www.nccourage.com/,https://en.wikipedia.org/wiki/North_Carolina_Courage
