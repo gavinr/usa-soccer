@@ -21,7 +21,7 @@ CSV data of the USA soccer teams and locations
 
 ## Source
 
- * The data comes from Wikipedia ([Major League Soccer](https://en.wikipedia.org/wiki/Major_League_Soccer#Teams) and [USL Championship](https://en.wikipedia.org/wiki/USL_Championship#Clubs)).
+ * The data comes from Wikipedia.
 
 ## Contributing and Usage
 
