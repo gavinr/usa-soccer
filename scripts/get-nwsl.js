@@ -34,15 +34,41 @@ var getLocation = function (title) {
   });
 };
 
+var getWebsite = function (title) {
+  // await fetch(url);
+  var url = new URL('https://en.wikipedia.org/api/rest_v1/page/html/' + title);
+  
+  return new Promise(async (resolve, reject) => {
+
+    const results = await fetch(url);
+    const textResults = await results.text();
+
+    const parts = textResults.split('<h2 id="External_links">External links</h2>');
+    if(parts.length > 1) {
+      const parts2 = parts[1].split('<a rel="mw:ExtLink" href="');
+      const parts3 = parts2[1].split('"');
+      var u = new URL(parts3[0]);
+      resolve(u.href);
+    } else {
+      // else:
+      console.error('error in parsing', title);
+      resolve(false);
+    }
+
+  });
+};
+
 
 const results = $('.wikitable').first().find('tr').get().map(async function(tr) {
   if($(tr).find('td').eq(0).find('a').text()) {
 
     var stadiumLink = $(tr).find('td').eq(1).find('a').eq(0).attr('href');
-    console.log('stadiumLink:', stadiumLink);
     if(stadiumLink) {
       var location = await getLocation(decodeURIComponent(stadiumLink.replace('/wiki/', '')))
     }
+
+    var teamLink = $(tr).find('td').eq(0).find('a').eq(0).attr('href');
+    var website = await getWebsite(decodeURIComponent(teamLink.replace('/wiki/', '')));
 
     if(location) {
       console.log('location', location);
@@ -57,6 +83,8 @@ const results = $('.wikitable').first().find('tr').get().map(async function(tr) 
         $(tr).find('td').eq(4).text().trim(), // founded,
         $(tr).find('td').eq(5).text().trim(), // joined,
         $(tr).find('td').eq(6).find('a').eq(0).text().trim(),// head_coach
+        website, // url
+        `https://en.wikipedia.org${teamLink}` // wikipedia_url
       ];
     } else {
 
@@ -69,7 +97,7 @@ const results = $('.wikitable').first().find('tr').get().map(async function(tr) 
 });
 const r = await Promise.all(results);
 
-let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach';
+let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach,url';
 r.forEach((arr) => {
   if(arr.length > 0) {
     retString = `${retString}\n${arr.join(',')}`;
