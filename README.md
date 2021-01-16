@@ -4,8 +4,11 @@ CSV data of the USA soccer teams and locations
 ## Data
 
 * [mls.csv](https://github.com/gavinr/usa-soccer/blob/master/mls.csv) - current [Major League Soccer](https://en.wikipedia.org/wiki/Major_League_Soccer#Teams) league teams, meta data, and locations (latitude/longitude of city)
-* [nwsl.csv](https://github.com/gavinr/usa-soccer/blob/master/nwsl.csv) - current [National Women's Soccer League](https://en.wikipedia.org/wiki/National_Women%27s_Soccer_League#Teams) league teams and meta data
+  * API Link: `https://cdn.jsdelivr.net/gh/gavinr/usa-soccer@master/mls.csv`
+* [nwsl.csv](https://github.com/gavinr/usa-soccer/blob/master/nwsl.csv) - current [National Women's Soccer League](https://en.wikipedia.org/wiki/National_Women%27s_Soccer_League#Teams) league teams meta data, and locations (latitude/longitude of city)
+  * API Link: `https://cdn.jsdelivr.net/gh/gavinr/usa-soccer@master/nwsl.csv`
 * [usl.csv](https://github.com/gavinr/usa-soccer/blob/master/usl.csv) - current [USL Championship](https://en.wikipedia.org/wiki/USL_Championship#Clubs) league teams, meta data, and locations (latitude/longitude of city)
+  * API Link: `https://cdn.jsdelivr.net/gh/gavinr/usa-soccer@master/usl.csv`
 
 ## Map
 
