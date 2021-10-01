@@ -1,28 +1,28 @@
 ﻿team,city,state,latitude,longitude,stadium,stadium_capacity,joined,head_coach,url,wikipedia_url
-Atlanta United FC,Atlanta,Georgia,33.75555556,-84.4,Mercedes-Benz Stadium,425005,2017,Gabriel Heinze,https://www.atlutd.com/,https://en.wikipedia.org/wiki/Atlanta_United_FC
-Chicago Fire FC,Chicago,Illinois,41.8623,-87.6167,Soldier Field,24995,1998,Raphaël Wicky,https://www.chicagofirefc.com/,https://en.wikipedia.org/wiki/Chicago_Fire_FC
-FC Cincinnati,Cincinnati,Ohio,39.11138889,-84.52222222,West End Stadium,26000,2019,Jaap Stam,https://www.fccincinnati.com/,https://en.wikipedia.org/wiki/FC_Cincinnati
-Columbus Crew SC,Columbus,Ohio,39.96846111,-83.01708889,New Crew Stadium,20000,1996,Caleb Porter,https://www.columbuscrewsc.com/,https://en.wikipedia.org/wiki/Columbus_Crew_SC
-D.C. United,Washington,D.C.,38.86833333,-77.01222222,Audi Field,20000,1996,,https://www.dcunited.com/,https://en.wikipedia.org/wiki/D.C._United
-Inter Miami CF,Fort Lauderdale,Florida,26.19305556,-80.16111111,Inter Miami CF Stadium,18000,2020,,https://www.intermiamicf.com/,https://en.wikipedia.org/wiki/Inter_Miami_CF
-CF Montréal,Montreal,Quebec,45.56305556,-73.5525,Saputo Stadium,19619,2012,Thierry Henry,https://www.cfmontreal.com/fr,https://en.wikipedia.org/wiki/Club_de_Foot_Montr%C3%A9al
-Nashville SC,Nashville,Tennessee,36.16638889,-86.77138889,Nissan Stadium,69143,2020,Gary Smith,https://www.nashvillesc.com/,https://en.wikipedia.org/wiki/Nashville_SC
+Atlanta United FC,Atlanta,Georgia,33.75555556,-84.4,Mercedes-Benz Stadium,42500,2017,Gonzalo Pineda,https://www.atlutd.com/,https://en.wikipedia.org/wiki/Atlanta_United_FC
+CF Montréal,Montreal,Quebec,45.56305556,-73.5525,Saputo Stadium,19619,2012,Wilfried Nancy,https://www.cfmontreal.com/en,https://en.wikipedia.org/wiki/CF_Montr%C3%A9al
+Chicago Fire FC,Chicago,Illinois,41.8623,-87.6167,Soldier Field,24995,1998,Frank Klopas,https://www.chicagofirefc.com/,https://en.wikipedia.org/wiki/Chicago_Fire_FC
+Columbus Crew,Columbus,Ohio,39.96846111,-83.01708889,Lower.com Field,20371,1996,Caleb Porter,http://columbuscrew.com/,https://en.wikipedia.org/wiki/Columbus_Crew
+D.C. United,Washington,D.C.,38.86833333,-77.01222222,Audi Field,20000,1996,Hernán Losada,https://www.dcunited.com/,https://en.wikipedia.org/wiki/D.C._United
+FC Cincinnati,Cincinnati,Ohio,39.11138889,-84.52222222,TQL Stadium,26000,2019,Tyrone Marshall,https://www.fccincinnati.com/,https://en.wikipedia.org/wiki/FC_Cincinnati
+Inter Miami CF,Fort Lauderdale,Florida,26.19305556,-80.16111111,DRV PNK Stadium,18000,2020,Phil Neville,https://www.intermiamicf.com/,https://en.wikipedia.org/wiki/Inter_Miami_CF
+Nashville SC,Nashville,Tennessee,36.16638889,-86.77138889,Nissan Stadium,69143,2020,Gary Smith,http://www.nashvillesc.com/,https://en.wikipedia.org/wiki/Nashville_SC
 New England Revolution,Foxborough,Massachusetts,42.091,-71.264,Gillette Stadium,20000,1996,Bruce Arena,https://www.revolutionsoccer.net/,https://en.wikipedia.org/wiki/New_England_Revolution
-New York City FC,New York City,New York,40.82916667,-73.92638889,Yankee Stadium,303215,2015,Ronny Deila,https://www.nycfc.com/,https://en.wikipedia.org/wiki/New_York_City_FC
+New York City FC,New York City,New York,40.82916667,-73.92638889,Yankee Stadium,30321,2015,Ronny Deila,https://www.nycfc.com/,https://en.wikipedia.org/wiki/New_York_City_FC
 New York Red Bulls,Harrison,New Jersey,40.73666667,-74.15027778,Red Bull Arena,25000,1996,Gerhard Struber,https://www.newyorkredbulls.com/,https://en.wikipedia.org/wiki/New_York_Red_Bulls
 Orlando City SC,Orlando,Florida,28.5411,-81.3893,Exploria Stadium,25500,2015,Óscar Pareja,https://www.orlandocitysc.com/,https://en.wikipedia.org/wiki/Orlando_City_SC
 Philadelphia Union,Chester,Pennsylvania,39.83222222,-75.37888889,Subaru Park,18500,2010,Jim Curtin,https://www.philadelphiaunion.com/,https://en.wikipedia.org/wiki/Philadelphia_Union
-Toronto FC,Toronto,Ontario,43.63277778,-79.41861111,BMO Field,28351,2007,Chris Armas,https://www.torontofc.ca/,https://en.wikipedia.org/wiki/Toronto_FC
-Austin FC,Austin,Texas,30.388206,-97.719837,Austin FC stadium,20500,2021,Josh Wolff,https://www.austinfc.com/,https://en.wikipedia.org/wiki/Austin_FC
+Toronto FC,Toronto,Ontario,43.63277778,-79.41861111,BMO Field,28351,2007,Javier Pérez,https://www.torontofc.ca/,https://en.wikipedia.org/wiki/Toronto_FC
+Austin FC,Austin,Texas,30.388206,-97.719837,Q2 Stadium,20738,2021,Josh Wolff,https://www.austinfc.com/,https://en.wikipedia.org/wiki/Austin_FC
 Colorado Rapids,Commerce City,Colorado,39.80555556,-104.89194444,Dick's Sporting Goods Park,18061,1996,Robin Fraser,https://www.coloradorapids.com/,https://en.wikipedia.org/wiki/Colorado_Rapids
-FC Dallas,Frisco,Texas,33.15444444,-96.83527778,Toyota Stadium,20500,1996,Luchi Gonzalez,https://www.fcdallas.com/,https://en.wikipedia.org/wiki/FC_Dallas
+FC Dallas,Frisco,Texas,33.15444444,-96.83527778,Toyota Stadium,20500,1996,Marco Ferruzzi,https://www.fcdallas.com/,https://en.wikipedia.org/wiki/FC_Dallas
 Houston Dynamo FC,Houston,Texas,29.7522,-95.3524,BBVA Stadium,22039,2006,Tab Ramos,https://www.houstondynamo.com/,https://en.wikipedia.org/wiki/Houston_Dynamo_FC
 LA Galaxy,Carson,California,33.864,-118.261,Dignity Health Sports Park,27000,1996,Greg Vanney,https://www.lagalaxy.com/,https://en.wikipedia.org/wiki/LA_Galaxy
 Los Angeles FC,Los Angeles,California,34.013,-118.285,Banc of California Stadium,22000,2018,Bob Bradley,https://lafc.com/,https://en.wikipedia.org/wiki/Los_Angeles_FC
 Minnesota United FC,Saint Paul,Minnesota,44.95277778,-93.165,Allianz Field,19400,2017,Adrian Heath,https://www.mnufc.com/,https://en.wikipedia.org/wiki/Minnesota_United_FC
 Portland Timbers,Portland,Oregon,45.52138889,-122.69166667,Providence Park,25218,2011,Giovanni Savarese,https://www.timbers.com/,https://en.wikipedia.org/wiki/Portland_Timbers
-Real Salt Lake,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2005,Freddy Juarez,https://www.rsl.com/,https://en.wikipedia.org/wiki/Real_Salt_Lake
-San Jose Earthquakes,San Jose,California,37.35138889,-121.925,Earthquakes Stadium,18000,1996,Matías Almeyda,https://www.sjearthquakes.com/,https://en.wikipedia.org/wiki/San_Jose_Earthquakes
-Seattle Sounders FC,Seattle,Washington,47.5952,-122.3316,Lumen Field,377225,2009,Brian Schmetzer,https://www.soundersfc.com/,https://en.wikipedia.org/wiki/Seattle_Sounders_FC
+Real Salt Lake,Sandy,Utah,40.582923,-111.893156,Rio Tinto Stadium,20213,2005,Pablo Mastroeni,https://www.rsl.com/,https://en.wikipedia.org/wiki/Real_Salt_Lake
+San Jose Earthquakes,San Jose,California,37.35138889,-121.925,PayPal Park,18000,1996,Matías Almeyda,https://www.sjearthquakes.com/,https://en.wikipedia.org/wiki/San_Jose_Earthquakes
+Seattle Sounders FC,Seattle,Washington,47.5952,-122.3316,Lumen Field,37722,2009,Brian Schmetzer,https://www.soundersfc.com/,https://en.wikipedia.org/wiki/Seattle_Sounders_FC
 Sporting Kansas City,Kansas City,Kansas,39.1214,-94.821,Children's Mercy Park,18467,1996,Peter Vermes,https://www.sportingkc.com/,https://en.wikipedia.org/wiki/Sporting_Kansas_City
-Vancouver Whitecaps FC,Vancouver,British Columbia,49.27666667,-123.11194444,BC Place,221205,2011,Marc Dos Santos,https://www.whitecapsfc.com/,https://en.wikipedia.org/wiki/Vancouver_Whitecaps_FC
+Vancouver Whitecaps FC,Vancouver,British Columbia,49.27666667,-123.11194444,BC Place,22120,2011,Vanni Sartini,https://www.whitecapsfc.com/,https://en.wikipedia.org/wiki/Vancouver_Whitecaps_FC
