@@ -27,7 +27,7 @@ var getLocation = function (title) {
     if (resObject.hasOwnProperty('coordinates')) {
       resolve(resObject.coordinates[0]);
     } else {
-      console.log('issue!', key);
+      console.log('issue!', key, title);
       resolve(false);
     }
 
@@ -58,6 +58,26 @@ var getWebsite = function (title) {
   });
 };
 
+var getLogo = function (title) {
+  return new Promise((resolve, reject) => {
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/html/${title}`)
+      .then((response) => response.text())
+      .then((result) => {
+        let firstSrc = result.indexOf("src");
+        while (result[firstSrc + 5] != "/") {
+          firstSrc = result.indexOf("src", firstSrc + 1);
+        }
+        let firstUrlString = result.indexOf("/", firstSrc);
+        let tempUrl = "";
+        while (result[firstUrlString] != '"') {
+          tempUrl += result[firstUrlString];
+          firstUrlString++;
+        }
+        resolve(tempUrl);
+      });
+  });
+};
+
 
 const results = $('.wikitable').first().find('tr').get().map(async function (tr) {
   if ($(tr).find('td').eq(0).find('a').text()) {
@@ -67,6 +87,7 @@ const results = $('.wikitable').first().find('tr').get().map(async function (tr)
 
     var teamLink = $(tr).find('td').eq(0).find('a').eq(0).attr('href');
     var website = await getWebsite(decodeURIComponent(teamLink.replace('/wiki/', '')));
+    var logoUrl = await getLogo(decodeURIComponent(teamLink.replace('/wiki/', '')));
 
 
     if (location) {
@@ -82,7 +103,8 @@ const results = $('.wikitable').first().find('tr').get().map(async function (tr)
         $(tr).find('td').eq(4).text().trim(), // joined,
         $(tr).find('td').eq(5).find('a').eq(0).text().trim(),// head_coach
         website, // url
-        `https://en.wikipedia.org${teamLink}` // wikipedia_url
+        `https://en.wikipedia.org${teamLink}`, // wikipedia_url
+        `https:${logoUrl}`
       ];
     } else {
 
@@ -95,7 +117,7 @@ const results = $('.wikitable').first().find('tr').get().map(async function (tr)
 });
 const r = await Promise.all(results);
 
-let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,joined,head_coach,url,wikipedia_url';
+let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,joined,head_coach,url,wikipedia_url,logo_url';
 r.forEach((arr) => {
   if (arr.length > 0) {
     retString = `${retString}\n${arr.join(',')}`;

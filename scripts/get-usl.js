@@ -58,6 +58,26 @@ var getWebsite = function (title) {
   });
 };
 
+var getLogo = function (title) {
+  return new Promise((resolve, reject) => {
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/html/${title}`)
+      .then((response) => response.text())
+      .then((result) => {
+        let firstSrc = result.indexOf("src");
+        while (result[firstSrc + 5] != "/") {
+          firstSrc = result.indexOf("src", firstSrc + 1);
+        }
+        let firstUrlString = result.indexOf("/", firstSrc);
+        let tempUrl = "";
+        while (result[firstUrlString] != '"') {
+          tempUrl += result[firstUrlString];
+          firstUrlString++;
+        }
+        resolve(tempUrl);
+      });
+  });
+};
+
 
 const results = $('.wikitable').eq(1).find('tr').get().map(async function (tr) {
   if ($(tr).find('td').eq(0).find('a').text()) {
@@ -67,6 +87,7 @@ const results = $('.wikitable').eq(1).find('tr').get().map(async function (tr) {
 
     var teamLink = $(tr).find('td').eq(0).find('a').eq(0).attr('href');
     var website = await getWebsite(decodeURIComponent(teamLink.replace('/wiki/', '')));
+    var logoUrl = await getLogo(decodeURIComponent(teamLink.replace('/wiki/', '')));
 
     if (location) {
 
@@ -97,6 +118,7 @@ const results = $('.wikitable').eq(1).find('tr').get().map(async function (tr) {
 
       retArr.push(website); // url
       retArr.push(`https://en.wikipedia.org${teamLink}`); // wikipedia_url
+      retArr.push(`https:${logoUrl}`);
       return retArr;
     } else {
 
@@ -109,7 +131,7 @@ const results = $('.wikitable').eq(1).find('tr').get().map(async function (tr) {
 });
 const r = await Promise.all(results);
 
-let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate,url,wikipedia_url';
+let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate,url,wikipedia_url,logo_url';
 r.forEach((arr) => {
   if (arr.length > 0) {
     retString = `${retString}\n${arr.join(',')}`;
