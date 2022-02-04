@@ -1,22 +1,21 @@
-// run this in the console on page 
+// run this in the console on page
 // https://en.wikipedia.org/wiki/USL_Championship#Current_clubs
-
 
 var getLocation = function (title) {
   // await fetch(url);
-  var url = new URL('https://en.wikipedia.org/w/api.php');
+  var url = new URL("https://en.wikipedia.org/w/api.php");
 
   return new Promise(async (resolve, reject) => {
     const params = {
-      'action': 'query',
-      'prop': 'coordinates',
-      'titles': title,
-      'format': 'json',
-      'origin': '*'
+      action: "query",
+      prop: "coordinates",
+      titles: title,
+      format: "json",
+      origin: "*",
     };
     // https://github.com/github/fetch/issues/256#issuecomment-379196019
     Object.keys(params).forEach((key) => {
-      url.searchParams.append(key, params[key])
+      url.searchParams.append(key, params[key]);
     });
 
     const results = await fetch(url);
@@ -24,26 +23,27 @@ var getLocation = function (title) {
 
     const key = Object.keys(jsonResults.query.pages)[0];
     const resObject = jsonResults.query.pages[key];
-    if (resObject.hasOwnProperty('coordinates')) {
+    // console.log("resObject", resObject);
+    if (resObject.hasOwnProperty("coordinates")) {
       resolve(resObject.coordinates[0]);
     } else {
-      console.log('issue!', key);
+      console.log("issue!", key, title);
       resolve(false);
     }
-
   });
 };
 
 var getWebsite = function (title) {
   // await fetch(url);
-  var url = new URL('https://en.wikipedia.org/api/rest_v1/page/html/' + title);
+  var url = new URL("https://en.wikipedia.org/api/rest_v1/page/html/" + title);
 
   return new Promise(async (resolve, reject) => {
-
     const results = await fetch(url);
     const textResults = await results.text();
 
-    const parts = textResults.split('<h2 id="External_links">External links</h2>');
+    const parts = textResults.split(
+      '<h2 id="External_links">External links</h2>'
+    );
     if (parts.length > 1) {
       const parts2 = parts[1].split('<a rel="mw:ExtLink" href="');
       const parts3 = parts2[1].split('"');
@@ -51,10 +51,9 @@ var getWebsite = function (title) {
       resolve(u.href);
     } else {
       // else:
-      console.error('error in parsing', title);
+      console.error("error in parsing", title);
       resolve(false);
     }
-
   });
 };
 
@@ -78,63 +77,78 @@ var getLogo = function (title) {
   });
 };
 
+const results = $(".wikitable")
+  .eq(1)
+  .find("tr")
+  .get()
+  .map(async function (tr) {
+    if ($(tr).find("td").eq(0).find("a").text()) {
+      var stadiumLink = $(tr).find("td").eq(2).find("a").eq(0).attr("href");
+      var location = await getLocation(
+        decodeURIComponent(stadiumLink.replace("/wiki/", ""))
+      );
 
-const results = $('.wikitable').eq(1).find('tr').get().map(async function (tr) {
-  if ($(tr).find('td').eq(0).find('a').text()) {
+      var teamLink = $(tr).find("td").eq(0).find("a").eq(0).attr("href");
+      var website = await getWebsite(
+        decodeURIComponent(teamLink.replace("/wiki/", ""))
+      );
+      var logoUrl = await getLogo(
+        decodeURIComponent(teamLink.replace("/wiki/", ""))
+      );
 
-    var stadiumLink = $(tr).find('td').eq(2).find('a').eq(0).attr('href');
-    var location = await getLocation(decodeURIComponent(stadiumLink.replace('/wiki/', '')))
+      if (location) {
+        // length: $(tr).find('td').length
+        let retArr = [
+          $(tr).find("td").eq(0).find("a").eq(0).text(), // team name
+          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[0].trim(), // city
+          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[1].trim(), // state
+          location.lat, // latitude
+          location.lon, // longitude
+          $(tr).find("td").eq(2).find("a").eq(0).text(), // stadium
+          $(tr)
+            .find("td")
+            .eq(3)
+            .clone()
+            .children()
+            .remove()
+            .end()
+            .text()
+            .replace(",", "")
+            .trim(), // stadium_capacity,
+        ];
 
-    var teamLink = $(tr).find('td').eq(0).find('a').eq(0).attr('href');
-    var website = await getWebsite(decodeURIComponent(teamLink.replace('/wiki/', '')));
-    var logoUrl = await getLogo(decodeURIComponent(teamLink.replace('/wiki/', '')));
+        if ($(tr).find("td").length === 8) {
+          retArr.push($(tr).find("td").eq(4).text().trim()); // founded
+          retArr.push($(tr).find("td").eq(5).text().trim()); // joined
+          retArr.push($(tr).find("td").eq(6).find("a").eq(1).text().trim()); // head_coach
+          retArr.push($(tr).find("td").eq(7).text().trim()); // mls_affiliate
+        } else {
+          // assume the "founded" and "joined" are merged cells
+          retArr.push($(tr).find("td").eq(4).text().trim()); // founded
+          retArr.push($(tr).find("td").eq(4).text().trim()); // joined
+          retArr.push($(tr).find("td").eq(5).find("a").eq(1).text().trim()); // head_coach
+          retArr.push($(tr).find("td").eq(6).text().trim()); // mls_affiliate
+        }
 
-    if (location) {
-
-      // length: $(tr).find('td').length
-      let retArr = [
-        $(tr).find('td').eq(0).find('a').eq(0).text(), // team name
-        $(tr).find('td').eq(1).find('a').eq(0).text().split(',')[0].trim(), // city
-        $(tr).find('td').eq(1).find('a').eq(0).text().split(',')[1].trim(), // state
-        location.lat, // latitude
-        location.lon, // longitude
-        $(tr).find('td').eq(2).find('a').eq(0).text(), // stadium
-        $(tr).find('td').eq(3).clone().children().remove().end().text().replace(',', '').trim() // stadium_capacity,
-
-      ];
-
-      if ($(tr).find('td').length === 8) {
-        retArr.push($(tr).find('td').eq(4).text().trim()); // founded
-        retArr.push($(tr).find('td').eq(5).text().trim()); // joined
-        retArr.push($(tr).find('td').eq(6).find('a').eq(1).text().trim()); // head_coach
-        retArr.push($(tr).find('td').eq(7).text().trim()); // mls_affiliate
+        retArr.push(website); // url
+        retArr.push(`https://en.wikipedia.org${teamLink}`); // wikipedia_url
+        retArr.push(`https:${logoUrl}`);
+        return retArr;
       } else {
-        // assume the "founded" and "joined" are merged cells
-        retArr.push($(tr).find('td').eq(4).text().trim()); // founded
-        retArr.push($(tr).find('td').eq(4).text().trim()); // joined
-        retArr.push($(tr).find('td').eq(5).find('a').eq(1).text().trim()); // head_coach
-        retArr.push($(tr).find('td').eq(6).text().trim()); // mls_affiliate
+        return [];
       }
-
-      retArr.push(website); // url
-      retArr.push(`https://en.wikipedia.org${teamLink}`); // wikipedia_url
-      retArr.push(`https:${logoUrl}`);
-      return retArr;
     } else {
-
+      // title or something
       return [];
     }
-  } else {
-    // title or something
-    return [];
-  }
-});
+  });
 const r = await Promise.all(results);
 
-let retString = 'team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate,url,wikipedia_url,logo_url';
+let retString =
+  "team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate,url,wikipedia_url,logo_url";
 r.forEach((arr) => {
   if (arr.length > 0) {
-    retString = `${retString}\n${arr.join(',')}`;
+    retString = `${retString}\n${arr.join(",")}`;
   }
 });
 console.log(retString);
