@@ -21,12 +21,12 @@ CSV data of the USA soccer teams and locations
 
 ## Map
 
-[View an interactive map of this data](https://arcg.is/10yuXW)
+[View an interactive map of this data](https://www.arcgis.com/apps/mapviewer/index.html?webmap=374c22bdb75b46fe9cfac4326fb78ca5)
 
-[![screenshot](https://github.com/gavinr/usa-soccer/raw/master/map.png)](https://arcg.is/10yuXW)
+[![screenshot](https://github.com/gavinr/usa-soccer/raw/master/map.png)](https://www.arcgis.com/apps/mapviewer/index.html?webmap=374c22bdb75b46fe9cfac4326fb78ca5)
 
-- [Map of Men's Teams](https://arcg.is/18zeHG)
-- [Map of Women's Teams](https://arcg.is/DTKbz)
+- [Map of Men's Teams](https://www.arcgis.com/apps/mapviewer/index.html?webmap=52475e6edb18471780858627b40460c2)
+- [Map of Women's Teams](https://www.arcgis.com/apps/mapviewer/index.html?webmap=6f9207d722fe4ff792fb4eca9b3eff7f)
 
 ## Source
 
