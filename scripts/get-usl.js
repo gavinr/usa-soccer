@@ -45,7 +45,7 @@ var getWebsite = function (title) {
       '<h2 id="External_links">External links</h2>'
     );
     if (parts.length > 1) {
-      const parts2 = parts[1].split('<a rel="mw:ExtLink" href="');
+      const parts2 = parts[1].split('<a rel="mw:ExtLink nofollow" href="');
       const parts3 = parts2[1].split('"');
       var u = new URL(parts3[0]);
       resolve(u.href);
