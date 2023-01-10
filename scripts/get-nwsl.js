@@ -44,13 +44,13 @@ var getWebsite = function (title) {
     const results = await fetch(url);
     const textResults = await results.text();
 
-    // console.log('textResults', textResults);
+    // console.log("textResults", textResults);
 
     const parts = textResults.split(
       '<h2 id="External_links">External links</h2>'
     );
     if (parts.length > 1) {
-      const parts2 = parts[1].split('<a rel="mw:ExtLink" href="');
+      const parts2 = parts[1].split('<a rel="mw:ExtLink nofollow" href="');
       const parts3 = parts2[1].split('"');
       var u = new URL(parts3[0]);
       resolve(u.href);
@@ -90,6 +90,7 @@ const results = $(".wikitable")
   .first()
   .find("tr")
   .get()
+  // .slice(0, 3)
   .map(async function (tr) {
     if ($(tr).find("td").eq(0).find("a").text()) {
       var stadiumLink = $(tr).find("td").eq(2).find("a").eq(0).attr("href");
