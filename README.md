@@ -1,5 +1,13 @@
 # USA Soccer
-CSV data of the USA soccer teams and locations
+
+Maps and data of the USA soccer teams
+
+[![MLS Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/mls.png)](https://maps.gavinr.com/usa-soccer-logos.html)
+[![NWSL Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/nwsl.png)](https://maps.gavinr.com/usa-soccer-logos.html?nwsl)
+[![USL Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/usl.png)](https://maps.gavinr.com/usa-soccer-logos.html?usl)
+[![All teams (points) map](https://github.com/gavinr/usa-soccer/raw/master/images/all.png)](https://maps.gavinr.com/usa-soccer.html)
+
+More info on the maps: [gavinr.com/maps/usa-soccer](https://gavinr.com/maps/usa-soccer/)
 
 ## Data
 
@@ -19,19 +27,10 @@ CSV data of the USA soccer teams and locations
     * CSV: `https://cdn.jsdelivr.net/gh/gavinr/usa-soccer@master/usl.csv`
     * GeoJSON: `https://cdn.jsdelivr.net/gh/gavinr/usa-soccer@master/usl.geojson`
 
-## Map
-
-[View an interactive map of this data](https://arcg.is/0eqOq5)
-
-[![screenshot](https://github.com/gavinr/usa-soccer/raw/master/map.png)](https://arcg.is/0eqOq5)
-
-- [Map of Men's Teams](https://www.arcgis.com/apps/instant/media/index.html?appid=b7f4bf1929b34d69b7d866d1c38dd9ed&webmap=52475e6edb18471780858627b40460c2)
-- [Map of Women's Teams](https://www.arcgis.com/apps/instant/media/index.html?appid=b7f4bf1929b34d69b7d866d1c38dd9ed&webmap=6f9207d722fe4ff792fb4eca9b3eff7f)
-
 ## Source
 
- * The data comes from Wikipedia.
+* The data comes from Wikipedia.
 
 ## Contributing and Usage
 
- * Everyone is welcome to contribute or use this data.
+* Everyone is welcome to contribute or use this data.
