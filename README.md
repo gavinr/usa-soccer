@@ -2,9 +2,20 @@
 
 Maps and data of the USA soccer teams
 
+### MLS
+
 [![MLS Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/mls.png)](https://maps.gavinr.com/usa-soccer-logos.html)
+
+### NWSL
+
 [![NWSL Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/nwsl.png)](https://maps.gavinr.com/usa-soccer-logos.html?nwsl)
+
+### USL
+
 [![USL Logos Map](https://github.com/gavinr/usa-soccer/raw/master/images/usl.png)](https://maps.gavinr.com/usa-soccer-logos.html?usl)
+
+### All teams (points)
+
 [![All teams (points) map](https://github.com/gavinr/usa-soccer/raw/master/images/all.png)](https://maps.gavinr.com/usa-soccer.html)
 
 More info on the maps: [gavinr.com/maps/usa-soccer](https://gavinr.com/maps/usa-soccer/)
