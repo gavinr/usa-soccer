@@ -57,22 +57,49 @@ var getWebsite = function (title) {
   });
 };
 
+var getAllImages = function (htmlText) {
+  var re = /<img[^>]+src="\/\/([^">]+)/g;
+
+  // const results = re.exec(htmlText);
+  const results = htmlText.matchAll(re);
+  return Array.from(results, (m) => `https://${m[1]}`);
+};
+
+var notProhibited = function (url) {
+  const prohibitedImages = [
+    "50px-Question_book-new.svg.png",
+    "Wiki_letter_w.svg.png",
+  ];
+
+  const match = prohibitedImages.find((x) => url.indexOf(x) > -1);
+
+  if (match) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
 var getLogo = function (title) {
   return new Promise((resolve, reject) => {
     fetch(`https://en.wikipedia.org/api/rest_v1/page/html/${title}`)
       .then((response) => response.text())
       .then((result) => {
-        let firstSrc = result.indexOf("src");
-        while (result[firstSrc + 5] != "/") {
-          firstSrc = result.indexOf("src", firstSrc + 1);
-        }
-        let firstUrlString = result.indexOf("/", firstSrc);
-        let tempUrl = "";
-        while (result[firstUrlString] != '"') {
-          tempUrl += result[firstUrlString];
-          firstUrlString++;
-        }
-        resolve(tempUrl);
+        const allImages = getAllImages(result);
+        console.log("allImages", allImages);
+
+        const retImage = allImages.find((x) => notProhibited(x));
+        // let firstSrc = result.indexOf("src");
+        // while (result[firstSrc + 5] != "/") {
+        //   firstSrc = result.indexOf("src", firstSrc + 1);
+        // }
+        // let firstUrlString = result.indexOf("/", firstSrc);
+        // let tempUrl = "";
+        // while (result[firstUrlString] != '"') {
+        //   tempUrl += result[firstUrlString];
+        //   firstUrlString++;
+        // }
+        resolve(retImage);
       });
   });
 };
@@ -132,7 +159,7 @@ const results = $(".wikitable")
 
         retArr.push(website); // url
         retArr.push(`https://en.wikipedia.org${teamLink}`); // wikipedia_url
-        retArr.push(`https:${logoUrl}`);
+        retArr.push(`${logoUrl}`);
         return retArr;
       } else {
         return [];
