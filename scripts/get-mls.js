@@ -88,16 +88,19 @@ const results = $(".wikitable")
   .get()
   .map(async function (tr) {
     console.log("tr", tr);
-    if ($(tr).find("td").eq(0).find("a").text()) {
-      const first = $(tr).find("td").eq(0).find("a").eq(0).text();
+    if ($(tr).find("td,th").eq(0).find("a").text()) {
+      const first = $(tr).find("td,th").eq(0).find("a").eq(0).text();
 
+      console.log("first", first);
       let baseIndex = 0;
-      if (first.includes("Conference")) {
+      if (first.includes("Western") || first.includes("Eastern")) {
         baseIndex = 1;
       }
 
+      console.log("baseindex", baseIndex);
+
       var stadiumLink = $(tr)
-        .find("td")
+        .find("td,th")
         .eq(2 + baseIndex)
         .find("a")
         .eq(0)
@@ -108,7 +111,7 @@ const results = $(".wikitable")
       );
 
       var teamLink = $(tr)
-        .find("td")
+        .find("td,th")
         .eq(0 + baseIndex)
         .find("a")
         .eq(0)
@@ -124,14 +127,14 @@ const results = $(".wikitable")
         console.log("location:", location);
 
         const name = $(tr)
-          .find("td")
+          .find("td,th")
           .eq(0 + baseIndex)
           .find("a")
           .eq(0)
           .text();
         console.log("name", name);
         const city = $(tr)
-          .find("td")
+          .find("td,th")
           .eq(1 + baseIndex)
           .find("a")
           .eq(0)
@@ -140,7 +143,7 @@ const results = $(".wikitable")
           .trim();
         console.log("city", city);
         const state = $(tr)
-          .find("td")
+          .find("td,th")
           .eq(1 + baseIndex)
           .find("a")
           .eq(0)
@@ -151,14 +154,14 @@ const results = $(".wikitable")
         const lat = location.lat;
         const lon = location.lon;
         const stadium = $(tr)
-          .find("td")
+          .find("td,th")
           .eq(2 + baseIndex)
           .find("a")
           .eq(0)
           .text();
         console.log("stadium", stadium);
         const capacity = $(tr)
-          .find("td")
+          .find("td,th")
           .eq(3 + baseIndex)
           .clone()
           .children()
@@ -178,12 +181,12 @@ const results = $(".wikitable")
           stadium, // stadium
           capacity, // stadium_capacity,
           $(tr)
-            .find("td")
+            .find("td,th")
             .eq(4 + baseIndex)
             .text()
             .trim(), // joined,
           $(tr)
-            .find("td")
+            .find("td,th")
             .eq(5 + baseIndex)
             .find("a")
             .eq(0)
