@@ -92,8 +92,8 @@ const results = $(".wikitable")
   .get()
   // .slice(0, 3)
   .map(async function (tr) {
-    if ($(tr).find("td").eq(0).find("a").text()) {
-      var stadiumLink = $(tr).find("td").eq(2).find("a").eq(0).attr("href");
+    if ($(tr).find("td,th").eq(0).find("a").text()) {
+      var stadiumLink = $(tr).find("td,th").eq(2).find("a").eq(0).attr("href");
       console.log("stadiumLink", stadiumLink);
       if (stadiumLink) {
         var location = await getLocation(
@@ -101,7 +101,7 @@ const results = $(".wikitable")
         );
       }
 
-      var teamLink = $(tr).find("td").eq(0).find("a").eq(0).attr("href");
+      var teamLink = $(tr).find("td,th").eq(0).find("a").eq(0).attr("href");
       var website = await getWebsite(
         decodeURIComponent(teamLink.replace("/wiki/", ""))
       );
@@ -110,28 +110,28 @@ const results = $(".wikitable")
       );
 
       if (location) {
-        console.log("name", $(tr).find("td").eq(0).find("a").eq(0).text());
+        console.log("name", $(tr).find("td,th").eq(0).find("a").eq(0).text());
         console.log("location", location);
         return [
-          $(tr).find("td").eq(0).find("a").eq(0).text(), // team name
-          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[0].trim(), // city
-          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[1].trim(), // state
+          $(tr).find("td,th").eq(0).find("a").eq(0).text(), // team name
+          $(tr).find("td,th").eq(1).find("a").eq(0).text().split(",")[0].trim(), // city
+          $(tr).find("td,th").eq(1).find("a").eq(0).text().split(",")[1].trim(), // state
           location.lat, // latitude
           location.lon, // longitude
-          $(tr).find("td").eq(2).find("a").eq(0).text(), // stadium
-          $(tr)
-            .find("td")
-            .eq(3)
-            .clone()
-            .children()
-            .remove()
-            .end()
-            .text()
-            .replace(",", "")
-            .trim(), // stadium_capacity,
-          $(tr).find("td").eq(4).text().trim(), // founded,
-          $(tr).find("td").eq(5).text().trim(), // joined,
-          $(tr).find("td").eq(6).find("a").eq(0).text().trim(), // head_coach
+          $(tr).find("td,th").eq(2).find("a").eq(0).text(), // stadium
+          // $(tr)
+          //   .find("td,th")
+          //   .eq(3)
+          //   .clone()
+          //   .children()
+          //   .remove()
+          //   .end()
+          //   .text()
+          //   .replace(",", "")
+          //   .trim(), // stadium_capacity,
+          $(tr).find("td,th").eq(3).text().trim(), // founded,
+          $(tr).find("td,th").eq(4).text().trim(), // joined,
+          $(tr).find("td,th").eq(5).find("a").eq(0).text().trim(), // head_coach
           website, // url
           `https://en.wikipedia.org${teamLink}`, // wikipedia_url
           `https:${logoUrl}`,
@@ -147,7 +147,7 @@ const results = $(".wikitable")
 const r = await Promise.all(results);
 
 let retString =
-  "team,city,state,latitude,longitude,stadium,stadium_capacity,founded,joined,head_coach,url,wikipedia_url,logo_url";
+  "team,city,state,latitude,longitude,stadium,founded,joined,head_coach,url,wikipedia_url,logo_url";
 r.forEach((arr) => {
   if (arr.length > 0) {
     retString = `${retString}\n${arr.join(",")}`;
