@@ -1,5 +1,5 @@
 // run this in the console on page
-// https://en.wikipedia.org/wiki/USL_Championship#Current_clubs
+// https://en.wikipedia.org/wiki/USL_Championship#Teams
 
 var getLocation = function (title) {
   // await fetch(url);
@@ -86,7 +86,7 @@ var getLogo = function (title) {
       .then((response) => response.text())
       .then((result) => {
         const allImages = getAllImages(result);
-        console.log("allImages", allImages);
+        // console.log("allImages", allImages);
 
         const retImage = allImages.find((x) => notProhibited(x));
         // let firstSrc = result.indexOf("src");
@@ -109,13 +109,31 @@ const results = $(".wikitable")
   .find("tr")
   .get()
   .map(async function (tr) {
-    if ($(tr).find("td").eq(0).find("a").text()) {
-      var stadiumLink = $(tr).find("td").eq(2).find("a").eq(0).attr("href");
+    if ($(tr).find("td,th").eq(0).find("a").text()) {
+      const first = $(tr).find("td,th").eq(0).find("a").eq(0).text();
+
+      console.log("first", first);
+      let baseIndex = 0;
+      if (first.includes("Conference")) {
+        baseIndex = 1;
+      }
+
+      var stadiumLink = $(tr)
+        .find("td,th")
+        .eq(2 + baseIndex)
+        .find("a")
+        .eq(0)
+        .attr("href");
       var location = await getLocation(
         decodeURIComponent(stadiumLink.replace("/wiki/", ""))
       );
 
-      var teamLink = $(tr).find("td").eq(0).find("a").eq(0).attr("href");
+      var teamLink = $(tr)
+        .find("td,th")
+        .eq(0 + baseIndex)
+        .find("a")
+        .eq(0)
+        .attr("href");
       var website = await getWebsite(
         decodeURIComponent(teamLink.replace("/wiki/", ""))
       );
@@ -126,15 +144,39 @@ const results = $(".wikitable")
       if (location) {
         // length: $(tr).find('td').length
         let retArr = [
-          $(tr).find("td").eq(0).find("a").eq(0).text(), // team name
-          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[0].trim(), // city
-          $(tr).find("td").eq(1).find("a").eq(0).text().split(",")[1].trim(), // state
+          $(tr)
+            .find("td,th")
+            .eq(0 + baseIndex)
+            .find("a")
+            .eq(0)
+            .text(), // team name
+          $(tr)
+            .find("td,th")
+            .eq(1 + baseIndex)
+            .find("a")
+            .eq(0)
+            .text()
+            .split(",")[0]
+            .trim(), // city
+          $(tr)
+            .find("td,th")
+            .eq(1 + baseIndex)
+            .find("a")
+            .eq(0)
+            .text()
+            .split(",")[1]
+            .trim(), // state
           location.lat, // latitude
           location.lon, // longitude
-          $(tr).find("td").eq(2).find("a").eq(0).text(), // stadium
           $(tr)
-            .find("td")
-            .eq(3)
+            .find("td,th")
+            .eq(2 + baseIndex)
+            .find("a")
+            .eq(0)
+            .text(), // stadium
+          $(tr)
+            .find("td,th")
+            .eq(3 + baseIndex)
             .clone()
             .children()
             .remove()
@@ -144,17 +186,57 @@ const results = $(".wikitable")
             .trim(), // stadium_capacity,
         ];
 
-        if ($(tr).find("td").length === 8) {
-          retArr.push($(tr).find("td").eq(4).text().trim()); // founded
-          retArr.push($(tr).find("td").eq(5).text().trim()); // joined
-          retArr.push($(tr).find("td").eq(6).find("a").eq(1).text().trim()); // head_coach
-          retArr.push($(tr).find("td").eq(7).text().trim()); // mls_affiliate
+        if ($(tr).find("td,th").length === 8) {
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(4 + baseIndex)
+              .text()
+              .trim()
+          ); // founded
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(5 + baseIndex)
+              .text()
+              .trim()
+          ); // joined
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(6 + baseIndex)
+              .find("a")
+              .eq(1)
+              .text()
+              .trim()
+          ); // head_coach
+          // retArr.push($(tr).find("td,th").eq(7 + baseIndex).text().trim()); // mls_affiliate
         } else {
           // assume the "founded" and "joined" are merged cells
-          retArr.push($(tr).find("td").eq(4).text().trim()); // founded
-          retArr.push($(tr).find("td").eq(4).text().trim()); // joined
-          retArr.push($(tr).find("td").eq(5).find("a").eq(1).text().trim()); // head_coach
-          retArr.push($(tr).find("td").eq(6).text().trim()); // mls_affiliate
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(4 + baseIndex)
+              .text()
+              .trim()
+          ); // founded
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(4 + baseIndex)
+              .text()
+              .trim()
+          ); // joined
+          retArr.push(
+            $(tr)
+              .find("td,th")
+              .eq(5 + baseIndex)
+              .find("a")
+              .eq(1)
+              .text()
+              .trim()
+          ); // head_coach
+          // retArr.push($(tr).find("td,th").eq(6 + baseIndex).text().trim()); // mls_affiliate
         }
 
         retArr.push(website); // url
@@ -172,7 +254,7 @@ const results = $(".wikitable")
 const r = await Promise.all(results);
 
 let retString =
-  "team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,mls_affiliate,url,wikipedia_url,logo_url";
+  "team,city,state,latitude,longitude,stadium,stadium_capacity,year_founded,year_joined,head_coach,url,wikipedia_url,logo_url";
 r.forEach((arr) => {
   if (arr.length > 0) {
     retString = `${retString}\n${arr.join(",")}`;
