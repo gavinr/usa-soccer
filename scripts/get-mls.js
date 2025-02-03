@@ -1,5 +1,5 @@
 // run this in the console on page
-// https://en.wikipedia.org/wiki/Major_League_Soccer#Teams
+// https://en.wikipedia.org/wiki/Major_League_Soccer#Clubs
 
 var getLocation = function (title) {
   // await fetch(url);
