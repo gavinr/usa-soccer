@@ -20,6 +20,8 @@ Maps and data of the USA soccer teams
 
 More info on the maps: [gavinr.com/maps/usa-soccer](https://gavinr.com/maps/usa-soccer/)
 
+If working in ArcGIS, see the [ArcGIS Online Items and Maps](https://www.arcgis.com/home/search.html?restrict=false&sortField=relevance&sortOrder=desc&searchTerm=tags%3Ausa%2Csoccer+owner%3Agavinrehkemper) for these datasets.
+
 ## Data
 
 * **MLS** ([CSV](https://github.com/gavinr/usa-soccer/blob/master/mls.csv), [GeoJSON](https://github.com/gavinr/usa-soccer/blob/master/mls.geojson))
